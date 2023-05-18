@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,100&family=Kavivanar&family=Overpass:wght@100;400&family=Quintessential&family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;700;800;900&family=Sriracha&family=Varela+Round&display=swap" rel="stylesheet">
+
+  </head>
+
+<body>
+    <header>
+        <div class="firsthead">
+            <div>
+                <span> 
+                    <span id="hugelogo">
+                        Huge 1ne</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <weak>Ghana</weak>
+                </span>
+            </div>
+            <nav >
+             <ul class="headlist">
+                <li>contact us</li>
+                <li>blogs</li>
+                <li> Make a purchase</li>
+            </ul>
+            </nav>
+          
+  
+        </div>
+        <div class="every" >
+                <!-- <hr> -->
+            <a href="index.html" class="back"><img src="icons/backarrow.svg" alt=" back" width=" 25px">
+            </a>
+            <nav class=" pages">
+                <a href="#"><img src="icons/rating.png" alt=" back" width=" 25px">&nbsp;&nbsp;&nbsp; Testimonies</a>
+                <!-- <p>&nbsp; </p> -->
+                <a href="#" id="Enhancement">
+                    <img src="icons/muscle.png" alt="strenght" width="30">&nbsp;&nbsp;&nbsp; Enlargement</a>
+                <!-- <p>&nbsp;</p> -->
+                <a href="#" id="order">
+                    <img src="icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.png" alt="order now" width="30" >&nbsp;&nbsp;&nbsp; Order Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <iframe
+      id="JotFormIFrame-231154984383563"
+      title="Product Order Form"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/231154984383563"
+      frameborder="0"
+      style="min-width:100%;max-width:100%;height:539px;border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+    var ifr = document.getElementById("JotFormIFrame-231154984383563");
+    if (ifr) {
+      var src = ifr.src;
+      var iframeParams = [];
+      if (window.location.href && window.location.href.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+      }
+      if (src && src.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+        src = src.substr(0, src.indexOf("?"))
+      }
+      iframeParams.push("isIframeEmbed=1");
+      ifr.src = src + "?" + iframeParams.join('&');
+    }
+    window.handleIFrameMessage = function(e) {
+      if (typeof e.data === 'object') { return; }
+      var args = e.data.split(":");
+      if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+      if (!iframe) { return; }
+      switch (args[0]) {
+        case "scrollIntoView":
+          iframe.scrollIntoView();
+          break;
+        case "setHeight":
+          iframe.style.height = args[1] + "px";
+          if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+            iframe.style.minHeight = args[1] + "px";
+          }
+          break;
+        case "collapseErrorPage":
+          if (iframe.clientHeight > window.innerHeight) {
+            iframe.style.height = window.innerHeight + "px";
+          }
+          break;
+        case "reloadPage":
+          window.location.reload();
+          break;
+        case "loadScript":
+          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+          var src = args[1];
+          if (args.length > 3) {
+              src = args[1] + ':' + args[2];
+          }
+          var script = document.createElement('script');
+          script.src = src;
+          script.type = 'text/javascript';
+          document.body.appendChild(script);
+          break;
+        case "exitFullscreen":
+          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+          break;
+      }
+      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+      }
+    };
+    window.isPermitted = function(originUrl, whitelisted_domains) {
+      var url = document.createElement('a');
+      url.href = originUrl;
+      var hostname = url.hostname;
+      var result = false;
+      if( typeof hostname !== 'undefined' ) {
+        whitelisted_domains.forEach(function(element) {
+            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                result = true;
+            }
+        });
+        return result;
+      }
+    };
+    if (window.addEventListener) {
+      window.addEventListener("message", handleIFrameMessage, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onmessage", handleIFrameMessage);
+    }
+    </script>
+
+    <div class="cover"></div>
+
+    <footer class="enan">    
+        <div class="enan1">
+            <span class="enan2">Huge 1ne</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<weak>Ghana</weak>
+            <br>
+            <p>© 2023 Huge1ne, Incorporated. All rights reserved.</p>
+        </div>
+        <div class="ena">
+            <nav >
+                <p>&nbsp;&nbsp;Contact Us</p>
+                <p>&nbsp;&nbsp;Privacy Policy</p>
+                <p>&nbsp;&nbsp;About Us</p>
+                <p> &nbsp;&nbsp;Frequently asked questions</p>
+            </nav>
+            <nav>
+                <p> &nbsp;&nbsp;Before and after</p>
+                <p> &nbsp;&nbsp;Men's World vitality</p>
+                <p> &nbsp;&nbsp;Big XXL Cream</p>
+                <p> &nbsp;&nbsp;Make A Purchase </p>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>     
