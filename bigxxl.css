@@ -177,6 +177,7 @@ strong{
 
 }
 .crackybackground{  
+    position: relative;
     box-sizing: border-box;
     overflow: hidden;
     height:fit-content ;
@@ -186,25 +187,27 @@ strong{
     border-radius: 20px;
 }
 .bback-color {
+    position: relative;
     box-sizing: border-box;
     background-color: #f08989d0;
     padding: 3.5rem;
 }
 .bmgrid{
     display: grid;
-    grid-auto-flow: column;
+    /* grid-auto-flow: row; */
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
 }
+
 
 .bimginfo { 
     display: grid;
     grid-template-rows: 78% 11% 11%;
 }
 .bigimg{
-    display: flex;
+    display: grid;
     background-color: #301919e9;
-    border-radius: 18px 18px 0px 0px;
+    border-radius: 18px 18px 4px 4px;
     background-repeat:no-repeat ;
     align-items: center;
     justify-content: center;
@@ -263,17 +266,60 @@ strong{
     }
     .bmgrid{
         display: grid;
+        grid-auto-flow: column ;
+        grid-template-rows: auto 1500px;
         /* height: fit-content; */
-        grid-auto-flow: row;
-        grid-template-rows:1fr 1fr;
+        height: fit-content;
     }
-    /* .bback-color{
+
+    .bback-color{
         display: grid;
-        padding: 19px;
-        grid-template-rows: 36% 62%;
-    } */
+        padding: 13px;
+        /* grid-template-rows: 36% 62%; */
+    }
+    .bimginfo{
+        display: grid;
+        width: 70%;
+        /* height: fit-content; */
+        grid-template-columns:1fr 1fr;
+        gap: .3rem;
+   
+    }
+    .bigimg{
+        padding: 10px;
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    #individuals{
+        width: 200px;
+    }
+    .order{
+        position: static;
+        box-shadow: none;
+        border-radius: .3rem;
+        font-size: 15px;
+        text-align: center;
+    }
+    .order strong{
+        font-size: 15px;
+    }
+    .order img{
+        width: 25px;
+        height: 25px;
+    }
+    .test{
+        border-radius: .3rem;
+    }
+    .article *{
+        font-size: 14px;
+    }
     .article{
-        font-size: 4px
+        padding: 5px;
+    }
+    .bexplain{
+        width: 30%;
+        padding: 5px;
     }
 }
 .bexplain{
