@@ -187,13 +187,17 @@ strong{
     border-radius: 20px;
 }
 .bback-color {
+    width: 100%;
     position: relative;
     box-sizing: border-box;
     background-color: #f08989d0;
     padding: 3.5rem;
 }
 .bmgrid{
+    width: 100%;
+    box-sizing: border-box;
     display: grid;
+    position: relative;
     /* grid-auto-flow: row; */
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
@@ -261,35 +265,33 @@ strong{
 }
 @media(max-width: 440px)
 {
-    .crackybackground{
-        gap: 2rem;
-    }
-    .bmgrid{
-        display: grid;
-        grid-auto-flow: column ;
-        grid-template-rows: auto 1500px;
-        /* height: fit-content; */
-        height: fit-content;
-    }
-
     .bback-color{
-        display: grid;
+        display: block;
         padding: 13px;
         /* grid-template-rows: 36% 62%; */
     }
+    .bmgrid{
+        
+        /* width: 100%; */
+        display: block;
+    }
+
+    
     .bimginfo{
-        display: grid;
-        width: 70%;
+        /* display: grid; */
+        /* width: 70%; */
         /* height: fit-content; */
         grid-template-columns:1fr 1fr;
+        grid-template-rows: auto 50px;
         gap: .3rem;
-   
+        margin-bottom: 2rem;
     }
     .bigimg{
+        /* height: fit-content; */
         padding: 10px;
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 4;
+        /* display: grid; */
+        grid-column-start:1;
+        grid-column-end: 3;
     }
     #individuals{
         width: 200px;
@@ -311,16 +313,7 @@ strong{
     .test{
         border-radius: .3rem;
     }
-    .article *{
-        font-size: 14px;
-    }
-    .article{
-        padding: 5px;
-    }
-    .bexplain{
-        width: 30%;
-        padding: 5px;
-    }
+
 }
 .bexplain{
     display: grid;
@@ -364,6 +357,33 @@ strong{
     margin: -5px -5px 0 -5px;
     top: -8px;
     box-shadow: #d0d0d070 0px 10px;
+}
+
+@media (max-width: 440px){
+    .article *{
+        font-size: 14px;
+    }
+    .article{
+        padding: 20px;
+    }
+
+    .bexplain{
+        width: 100%;
+        text-align: justify;
+        /* padding: 5px; */
+    }
+    .blist{
+        grid-auto-flow: row;
+    }
+    .whyb{
+        list-style-position:inside ;
+    }
+    .article h2{
+        font-size: 20px;
+    }
+    .whatb{
+        display: none;
+    }
 }
 .mcontainer{
     overflow: hidden;
