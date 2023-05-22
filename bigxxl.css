@@ -11,7 +11,7 @@ header {
     overflow: hidden;
     margin-bottom: 2rem;
     /* box-shadow: 1px 1px 15px #303030a0; */
-    
+    transition: all 200ms;
 }
 
 #hugelogo{
@@ -43,7 +43,7 @@ header {
         margin-bottom: 2px;
     }
     #hugelogo{
-        font-size: 40px;
+        font-size: 35px;
         margin: 4px;
     }
     #ghspace{
@@ -76,6 +76,7 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    transition: all 200ms;
 }
 a {
     text-decoration: none;
@@ -484,9 +485,8 @@ strong{
 
 .enan {
     display: grid;
-    border-radius: 30px 30px 0 0;
     background-color: #60202090;
-    height: 12rem;
+    height: fit-content;
     margin: 300px 0 0 0 ;
     /* color: #fff; */
     padding: 4rem;
@@ -510,17 +510,38 @@ strong{
     margin-left: 2em;
 }
 
-.enan2 {
-    font-weight: 900;
-    font-size: 70px;
-    /* background-color: #000900; */
-    
-}
 .enan1 p{
     margin-top:0 2rem;
 }
-.enan5{
-    margin:0 5rem; 
-    display: block;
-    
+
+@media(max-width: 440px)
+{
+    .enan{
+        display: grid;
+        position: relative;
+        grid-template-rows: 2fr 1.2fr;
+        grid-template-columns: none;
+        padding: .5rem;
+        gap: 1rem;
+        margin-top:  6rem;
+    }
+    .enan1{
+        display: block;
+        position: absolute;
+        order: 2;
+        bottom: 1rem;
+        justify-self: center;
+        text-align: center;
+    }
+    .enan *{
+        font-size: 11px;
+    }
+    .ena nav p{
+        font-size: 12px;
+        margin-left: 0;
+        border-left: solid 3px #00090090;
+    }
+    .ena{
+        gap: 1rem;
+    }
 }
