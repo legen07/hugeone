@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="headandfoot.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,100&family=Kavivanar&family=Overpass:wght@100;400&family=Quintessential&family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;700;800;900&family=Sriracha&family=Varela+Round&display=swap" rel="stylesheet">
 
   </head>
-
 <body>
     <header>
         <div class="firsthead">
@@ -19,17 +19,16 @@
                 <span> 
                     <span id="hugelogo">
                         Huge 1ne</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <weak>Ghana</weak>
+                    <weak id="ghspace">&nbsp;&nbsp;&nbsp;&nbsp;</weak>&nbsp;&nbsp;
+                    <weak id="weakgh">Ghana</weak>
                 </span>
             </div>
-            <nav >
-             <ul class="headlist">
-                <li>contact us</li>
-                <li>blogs</li>
-                <li> Make a purchase</li>
-            </ul>
-            </nav>
+            <nav>
+            <ul class="headlist">
+              <li><a href="tel:+ 233 50 865 9556 ">Contact Us</a></li>
+              <li id="makeapurchase"> <a href="forms.html" >Make a purchase</a></li>
+          </ul>
+          </nav>
           
   
         </div>
@@ -43,25 +42,25 @@
                 <a href="#" id="Enhancement">
                     <img src="icons/muscle.png" alt="strenght" width="30">&nbsp;&nbsp;&nbsp; Enlargement</a>
                 <!-- <p>&nbsp;</p> -->
-                <a href="#" id="order">
-                    <img src="icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.png" alt="order now" width="30" >&nbsp;&nbsp;&nbsp; Order Now</a>
+                <!-- <a href="#" id="order">
+                    <img src="icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.png" alt="order now" width="30" >&nbsp;&nbsp;&nbsp; Order Now</a> -->
             </nav>
         </div>
     </header>
 
-    <iframe id="JotFormIFrame-231155938393564" 
-    title="[Imported Form] Order Request" 
-    onload="window.parent.scrollTo(0,0)" 
-    allowtransparency="true" 
-    allowfullscreen="true" 
-    allow="geolocation; microphone; camera" 
-    src="https://form.jotform.com/231155938393564" 
-    frameborder="0" 
-    style="min-width:100%;max-width:100%;height:539px;border:none;" 
-    scrolling="no" 
-    > 
+    <iframe
+      id="JotFormIFrame-231154984383563"
+      title="Product Order Form"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/231154984383563"
+      frameborder="0"
+      style="min-width:100%;max-width:100%;height:539px;border:none;"
+      scrolling="no"
+    >
     </iframe>
-
     <script type="text/javascript">
     var ifr = document.getElementById("JotFormIFrame-231154984383563");
     if (ifr) {
@@ -148,13 +147,9 @@
 
     <div class="cover"></div>
 
-    
-
-
-
     <footer class="enan">    
         <div class="enan1">
-            <span class="enan2">Huge 1ne</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<weak>Ghana</weak>
+            <span id="hugelogo">Huge 1ne</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<weak>Ghana</weak>
             <br>
             <p>© 2023 Huge1ne, Incorporated. All rights reserved.</p>
         </div>
