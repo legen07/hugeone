@@ -1,0 +1,40 @@
+.bodybackground{
+    box-sizing: border-box;
+    padding: 3rem;
+    margin: 3rem 0;
+}
+.gridy{
+    box-sizing: border-box;
+    display: grid;
+    gap: 3rem;
+}
+.proofarticle{
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    padding: 3rem;
+    border-radius: 20px;
+}
+.proofarticle strong{
+    color: #d00;
+    
+}
+#viewerdescretion{
+    text-align: center;
+}
+.proofimages{
+    display: grid;
+    padding: 4rem;
+    overflow: hidden;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 3rem;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    justify-content: space-evenly;
+}
+
+.proofimages img{
+    /* border: solid 2px #000; */
+    width: 240px;
+    height: 290px;
+    border-radius: 8px;
+}
