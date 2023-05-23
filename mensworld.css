@@ -1,21 +1,4 @@
 
-.grid-box{
-    height: max-content;
-    margin: 3rem 0;
-    padding: 2rem;
-}
-.grid-box h1 {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom:3rem;
-}
-
-.bigbox1{
-    padding: 0rem 3rem;
-    border-radius: 14px;
-    margin: 4rem 1rem ;
-    background-color: #f0f0f0;
-}
 .mensimage{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -26,6 +9,37 @@
 .bigbox ul{
     line-height: 1.6;
     font-size: 18px;
+}
+
+@media(max-width: 440px)
+{
+    .bigbox{
+        position: relative;
+    }
+    .back{
+        position: absolute;
+        /* left: 1px; */
+        /* margin-left: -.5rem; */
+    }
+    .mensimage{
+        grid-template-columns: none;
+        gap: 0rem;
+    }
+    .menspicture img{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .mensbriefarticle h2{
+        position: absolute;
+        width: 90%;
+        text-align: center;
+        top: 0%;
+    }
+    .bigbox ul{
+        font-size: 16px;
+    }
+
 }
 
 

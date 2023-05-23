@@ -99,6 +99,10 @@ p {
 strong{
     font-size: 26px;
 }
+h1{
+    font-size: 40px;
+    text-align: center;
+}
 @media(max-width: 440px)
 {
     p{
@@ -107,6 +111,9 @@ strong{
     }
     strong{
         font-size: 19px;
+    }
+    h1{
+        font-size: 30px;
     }
     #Enhancement img{
         width: 20px;
@@ -187,11 +194,16 @@ strong{
         align-items: center;
     }
     .back{
-        position: relative;
-        left: 1px;
-        margin-left: -.5rem;
+        position: absolute;
+        left: 8px;
+        /* margin-left: -.5rem; */ */
     }
 
+}
+.grid-box{
+    height: max-content;
+    margin: 3rem 0;
+    padding: 2rem;
 }
 .bigbox{
     padding: 2rem 3rem;
@@ -200,17 +212,20 @@ strong{
     background-color: #f0f0f0;
 }
 .aa{
-        color: #00e;
+    color: #00e;
 }
 
 
 @media(max-width: 440px)
 {
-    
+    .grid-box{
+        padding: 0rem;
+    }
     .bigbox{
         padding: 1rem;
-        margin: 3rem 0;
+        margin: 3rem 0rem;
     }
+    
 
 }
 
