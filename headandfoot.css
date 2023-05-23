@@ -31,20 +31,26 @@ header {
     justify-content: end;
     align-items: center;
     grid-auto-flow:column;
-    column-gap: 1rem;
-    
+    column-gap: 1rem;  
+}
+.headlist  a{ 
+    color: #00e;
 }
 
 
 @media (max-width: 440px)
 {
     header{
-        padding:0 ;
+        padding: 1rem 0;
         margin-bottom: 2px;
     }
     #hugelogo{
         font-size: 35px;
-        margin: 4px;
+        margin-left: 4px;
+    }
+    .firsthead{
+        display: flex;
+        gap: 2rem;
     }
     #ghspace{
         display:none;
@@ -87,7 +93,7 @@ a {
 }
 
 p {
-    font-size:19px;
+    font-size:18px;
     line-height: 1.6;
 }
 strong{
@@ -96,14 +102,11 @@ strong{
 @media(max-width: 440px)
 {
     p{
-        font-size: 17px;
+        font-size: 16px;
         line-height: 1.5;
     }
     strong{
         font-size: 19px;
-    }
-    #testimonies {
-        display: none;
     }
     #Enhancement img{
         width: 20px;
@@ -120,7 +123,6 @@ strong{
 }
 
 .pages {
-
     box-sizing: border-box;
     display: grid;
     grid-auto-flow: column ;
@@ -137,7 +139,7 @@ strong{
 .back{
     position: absolute;
     left: 2rem;
-    background-color: #c0c0c0;
+    /* background-color: #c0c0c0; */
 }
 .pages  a {
     font-size: 22px;
@@ -170,19 +172,44 @@ strong{
 @media(max-width:440px)
 {
     .pages a{
-        padding: 4px;
+        padding: 3px;
         font-size: 12px;
-        box-shadow:.4px .4px 3px #50505080;
-
+        box-shadow:.7px .7px 5px #50505090;
     }
     #order{
-        box-shadow:.4px .4px 3px #50505080;
+        box-shadow:.7px .7px 5px #404040a0;
 
     }
     .pages{
+        gap: 11px;
         margin-top: 29px;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
         align-items: center;
+    }
+    .back{
+        position: relative;
+        left: 1px;
+        margin-left: -.5rem;
+    }
+
+}
+.bigbox{
+    padding: 2rem 3rem;
+    border-radius: 14px;
+    margin: 4rem 1rem ;
+    background-color: #f0f0f0;
+}
+.aa{
+        color: #00e;
+}
+
+
+@media(max-width: 440px)
+{
+    
+    .bigbox{
+        padding: 1rem;
+        margin: 3rem 0;
     }
 
 }
@@ -201,7 +228,7 @@ strong{
 }
 .enan {
     display: grid;
-    background-color: #60202090;
+    background-color: #20202090;
     height: fit-content;
     margin: 300px 0 0 0 ;
     /* color: #fff; */
@@ -260,3 +287,4 @@ strong{
     .ena{
         gap: 1rem;
     }
+}
