@@ -11,7 +11,7 @@ header {
     overflow: hidden;
     margin-bottom: 2rem;
     /* box-shadow: 1px 1px 15px #303030a0; */
-    transition: all 150ms;
+    transition: all 100ms;
 }
 
 #hugelogo{
@@ -186,11 +186,11 @@ h2 {
 
 #order{
     background-color: #808080;
-    box-shadow: .8px .8px 8px #0006;
+    box-shadow: .8px .8px 8px #0009;
     color: #000;
 }
 #order:hover{
-    box-shadow: .1px .1px 4px #0006;
+    box-shadow: .1px .1px 2px #0006;
 }
 #order:active{
     border: solid 1px#0009;
