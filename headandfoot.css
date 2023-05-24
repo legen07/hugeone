@@ -11,7 +11,7 @@ header {
     overflow: hidden;
     margin-bottom: 2rem;
     /* box-shadow: 1px 1px 15px #303030a0; */
-    transition: all 200ms;
+    transition: all 150ms;
 }
 
 #hugelogo{
