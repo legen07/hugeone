@@ -6,12 +6,13 @@ header {
     height: fit-content;
     justify-content: space-between;
     align-items: center;
-    padding:2rem 2.5rem 1.5rem 2.5rem;
+    padding:2rem 2.5rem 0rem 2.5rem;
     grid-template-columns: 1fr;
     overflow: hidden;
     margin-bottom: 2rem;
+    row-gap: 4rem;
     /* box-shadow: 1px 1px 15px #303030a0; */
-    transition: all 150ms;
+    transition: all 100ms;
 }
 
 #hugelogo{
@@ -22,7 +23,6 @@ header {
     display: grid;
     position: relative;
     grid-template-columns: 60% 40% ;
-
 }
 .firsthead li {
     list-style-type: none;
@@ -44,6 +44,7 @@ header {
     header{
         padding: 1rem 0 0 0;
         margin-bottom: 2px;
+        row-gap: 1rem;
     }
     #hugelogo{
         font-size: 35px;
@@ -94,7 +95,7 @@ a {
     font-family: 'Rubik', poppins, sans-serif;
 }
 
-p {
+p, ol , ul {
     font-size:20px;
     line-height: 1.6;
 }
@@ -186,11 +187,11 @@ h2 {
 
 #order{
     background-color: #808080;
-    box-shadow: .8px .8px 8px #0006;
+    box-shadow: .8px .8px 8px #0009;
     color: #000;
 }
 #order:hover{
-    box-shadow: .1px .1px 4px #0006;
+    box-shadow: .1px .1px 2px #0006;
 }
 #order:active{
     border: solid 1px#0009;
