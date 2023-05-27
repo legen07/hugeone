@@ -183,6 +183,10 @@
         grid-template-columns: none;
 
     }
+    /* .bigmainphotos img{
+        display: inline-block;
+        width: 20px;
+    } */
     .bigcan img{
         width: 180px;
         margin-top: 4rem;
