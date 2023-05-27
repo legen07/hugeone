@@ -9,7 +9,7 @@ header {
     padding:2rem 2.5rem 0rem 2.5rem;
     grid-template-columns: 1fr;
     overflow: hidden;
-    margin-bottom: 2rem;
+    margin-bottom: 12rem;
     row-gap: 4rem;
     /* box-shadow: 1px 1px 15px #303030a0; */
     transition: all 100ms;
@@ -116,8 +116,11 @@ h3{
 @media(max-width: 440px)
 {
     p{
-        font-size: 17px;
+        font-size: 18px;
         line-height: 1.5;
+    }
+    li{
+        font-size: 18px;
     }
     strong{
         font-size: 19px;
@@ -222,7 +225,7 @@ h3{
     .back{
         position: absolute;
         left: 8px;
-        /* margin-left: -.5rem; */ */
+        /* margin-left: -.5rem; */ 
     }
 
 }
@@ -271,7 +274,7 @@ h3{
     height: fit-content;
     margin: 300px 0 0 0 ;
     /* color: #fff; */
-    padding: 4rem;
+    padding: 2rem;
     grid-template-columns: 1fr 1fr;
 
 }
@@ -293,7 +296,7 @@ h3{
 }
 
 .enan1 p{
-    margin-top:0 2rem;
+    margin-top:1rem;
 }
 
 @media(max-width: 440px)
