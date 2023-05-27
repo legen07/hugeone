@@ -274,9 +274,11 @@
     border-radius: .6rem;
     padding: 3rem 3rem 6rem 3rem;
 }
-.mtext h3{
-    font-size: 22px;
+.article b{
+    text-align: left; 
+    font-size: 23px;
 }
+.
 .mtext li{
     line-height: 1.6;
     /* font-size: 20px; */

@@ -110,6 +110,9 @@ h2 {
     text-align: center;
     font-size: 28px;
 }
+h3{
+    font-size: 22px;
+}
 @media(max-width: 440px)
 {
     p{
