@@ -89,7 +89,7 @@
     /* left: 2rem; */
     left: 10%;
     top: 50%;
-    transform: translatey(-50%)
+    transform: translatey(-50%);
 }
 .test:hover{
     box-shadow:.5px .5px 3px #0008;
@@ -107,7 +107,6 @@
         display: block;
     }
 
-    
     .bimginfo{
         grid-template-columns:1fr 1fr;
         grid-template-rows: auto 4rem;
@@ -153,6 +152,7 @@
         width: 30px;
         left: 1rem;
     }
+    
 }
 
 .article{
@@ -218,10 +218,7 @@
     .bexplain{
         grid-template-rows: 89.4% 60px;
         width: 100%;
-        text-align: justify;
         gap: .3rem;
-        /* margin-bottom: 4rem; */
-        
     }
     .blist{
         display: block;
@@ -229,8 +226,9 @@
         
     }
     .whyb{
-        list-style-position:inside ;
-        width: 110%;
+        /* list-style-position:inside ; */
+        width: 100%;
+        margin-left: 0px;
     }
     .article h3 {
         font-size: 22px;
@@ -278,7 +276,7 @@
     text-align: left; 
     font-size: 23px;
 }
-.
+
 .mtext li{
     line-height: 1.6;
     /* font-size: 20px; */

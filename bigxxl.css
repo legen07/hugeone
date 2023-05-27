@@ -1,22 +1,5 @@
 
 
-.grid-box{
-    
-    height: max-content;
-    margin: 3rem 0;
-    padding: 2rem;
-}
-.grid-box h1 {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom:3rem;
-}
-
-#toc strong{
-    font-size: 26px;
-    font-weight: 500;
-}
-
 #toc ol p {
     list-style-type: none;
     font-size: 19px;
@@ -25,7 +8,6 @@
 }
 #toc ol li{
     list-style-type: none;
-    
 }
 #toc ul li {
     list-style-type: none;
@@ -48,21 +30,11 @@
     padding: 1rem;
     background-color: #fff;
 }
-
-.bigbox{ 
-    padding: 2rem 3rem;
-    border-radius: 14px;
-    margin: 4rem 1rem ;
-    background-color: #f0f0f0;
-}
 .bigbox0{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 2fr ;
     gap: 2rem;
-}
-.bigbox2 ol{
-    line-height: 1.5;
 }
 .bigcan img{
     filter:
@@ -72,32 +44,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.bigbox h2{
-    text-align: center;
-    font-size: 28px;
-    font-weight: 500;
-}
-.bigbox h3{
-    text-align: center;
-    font-size: 23px;
-    font-weight: 500;;
-}
-.bigxxlart p{
-    text-align: justify;
-}
-#microlist{
-    line-height: 1.6;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    font-size: 20px;  
-}
-#microlist ol {
-    line-height: 1.5;
-}
-.stron2 {
-    font-size: 20px; 
 }
 
 .genuity{
@@ -111,70 +57,17 @@
 .bigmainphotos{
     display: flex;
     justify-content: space-evenly;
-
 }
 .bigmainphotos img{
     border-radius: 1rem;
 }
 @media(max-width: 440px)
 {
-    p{
-        font-size: 16px;
-        line-height: 1.3;
-    }
-    strong{
-        font-size: 19px;
-    }
-    #testimonies {
-        display: none;
-    }
-    #Enhancement img{
-        width: 20px;
-    }
-    #order img{
-        width:20px;
-    }
-    .pages span{
-        font-size: 4px;
-    }
-    .pages a{
-        padding: 4px;
-        font-size: 12px;
-        box-shadow:.4px .4px 3px #50505080;
-
-    }
-    #order{
-        box-shadow:.4px .4px 3px #50505080;
-
-    }
-    .pages{
-        margin-top: 29px;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .grid-box{
-        margin: 4rem 0;
-        padding: 0;
-    }
-    .grid-box h1{
-        font-size: 24px;
-        margin-bottom: 1rem;
-    }
-    #toc strong{
-        font-size: 19px;
-    }
-    #toc ol p{
-
-        font-size: 16px;
-    }
-    #toc ul li{
-        font-size: 15px;
-    }
     #toc{
-        width: 90%;
+        width: 85%;
         padding: .9rem;
         left: 0rem;
-        margin: 1rem;
+        margin: 3rem 1rem;
     }
     .boc{
         padding: .2rem .2rem .2rem 0;
@@ -183,16 +76,10 @@
         display: relative;
         margin-left: -.3rem;
     }
-    .bigbox{
-        padding: .5rem .8rem;
-        margin: 2rem 0;
-    }
     .bigbox0{
         gap: .5rem;
         grid-template-columns: none;
-
     }
-
     .bigcan img{
         width: 180px;
         margin-top: 4rem;
@@ -200,25 +87,27 @@
     #bcream{
         position: absolute;
         top: 0rem;
-        font-size: 22px;
-        /* transform: translateX(-50); */
-        left: 50px;
-    }
-    .bigbox h2{
-        font-size: 20px;
-    }
-    .bigbox h3{
-        font-size: 17px;
+        width: 100%;
+        transform: translateX(-50%);
+        left: 50%;
     }
     #microlist{
-        font-size: 16px;
-        line-height: 1.4;
         grid-template-columns: none;
         gap: 0;
     }
-
+    .reasonbox img{
+        width: 50px;
+    }
+    .bigmainphotos {
+        display: grid;
+        position: relative;
+        grid-template-columns: auto auto;
+        gap: 2rem;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .bigmainphotos img{
+        width: 150px;
+        border-radius: 1rem;
+    }
 }
-
-
-
-
