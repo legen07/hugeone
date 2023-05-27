@@ -1,4 +1,3 @@
-
 .mensimage{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -6,26 +5,17 @@
     justify-content: center;
     align-items: center;
 }
-.bigbox ul{
-    line-height: 1.6;
-    font-size: 18px;
-}
 
 @media(max-width: 440px)
 {
     .bigbox{
         position: relative;
     }
-    .back{
-        position: absolute;
-        /* left: 1px; */
-        /* margin-left: -.5rem; */
-    }
     .mensimage{
         grid-template-columns: none;
         gap: 0rem;
     }
-    .menspicture img{
+    #menspicture img{
         position: relative;
         left: 50%;
         transform: translateX(-50%);
@@ -36,10 +26,6 @@
         text-align: center;
         top: 0%;
     }
-    .bigbox ul{
-        font-size: 16px;
-    }
-
 }
 
 
