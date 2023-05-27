@@ -107,6 +107,16 @@
     justify-content: center;
     align-items: center;
 }
+
+.bigmainphotos{
+    
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.bigmainphotos img{
+    border-radius: 1rem;
+}
 @media(max-width: 440px)
 {
     p{
@@ -183,10 +193,7 @@
         grid-template-columns: none;
 
     }
-    /* .bigmainphotos img{
-        display: inline-block;
-        width: 20px;
-    } */
+
     .bigcan img{
         width: 180px;
         margin-top: 4rem;
