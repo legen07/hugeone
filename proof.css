@@ -1,45 +1,21 @@
-.bodybackground{
-    box-sizing: border-box;
-    padding: 3rem;
-    margin: 3rem 0;
-}
-.gridy{
-    box-sizing: border-box;
-    display: grid;
-    gap: 2rem;
-}
-.proofarticle{
-    box-sizing: border-box;
-    background-color: #f0f0f0;
-    padding: 3rem;
-    border-radius: 20px;
-}
 .proofarticle strong{
     color: #d00;
-    
 }
 #viewerdescretion{
-    text-align: center;
+    text-align: center;  
 }
 .proofimages{
     display: grid;
-    padding: 4rem;
     overflow: hidden;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 3rem;
-    background-color: #f0f0f0;
-    border-radius: 20px;
-    justify-content: space-around  ;
+    grid-template-columns: repeat(4, auto);
 }
 
 .proofimages img{
-    /* border: solid 2px #000; */
     width: 240px;
     height: 290px;
     border-radius: 12px;
 }
 figure{
-    display: inherit;
     text-align: center;
 }
 figcaption{
@@ -50,19 +26,21 @@ figcaption{
 }
 @media(max-width: 440px)
 {
-    .bodybackground{
-        padding: 0rem;
+    .proofimages{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 
+        repeat(3, auto);
+        row-gap: 2rem;
+        justify-content: space-evenly;
+    }
+    .proofimages figure{
+        box-sizing: border-box;
+        margin: 0rem;
 
     }
-    .proofarticle{
-        padding: 1rem;
-    }
-    .proofimages{
-        padding: 1rem;
-        grid-template-columns: repeat(3, 1fr);
-        row-gap: 1rem;
-    }
     .proofimages img{
+        box-sizing: border-box;
         width: 105px;
         height: 140px;
     }
